@@ -6,6 +6,7 @@ services:
     build: .
     container_name: backend_test
     environment:
+      - REQUEST_ORIGIN=http://localhost:5000
       - REDIS_HOST=redis
       - POSTGRES_HOST=db
       - POSTGRES_USER=asd
